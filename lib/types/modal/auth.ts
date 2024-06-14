@@ -9,4 +9,4 @@ export interface ITokenInfo {
     expires_in: number;
     refresh_token: string;
     created_at: number;
-  }
+}

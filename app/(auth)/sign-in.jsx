@@ -21,8 +21,8 @@ const SignIn = () => {
     await loginApi({email: form.email, password: form.password}).then(async (res) => {
       const response = res.data
       console.log(response) 
-      await AsyncStorage.setItem('accessToken', response.data.access_token)
-      await AsyncStorage.setItem('refreshToken', response.data.refresh_token)
+      await AsyncStorage.setItem('access_token', response.data.access_token)
+      await AsyncStorage.setItem('refresh_token', response.data.refresh_token)
 
     })
     await initAuthStore()
